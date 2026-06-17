@@ -1,0 +1,6 @@
+{
+  "name": "OS File Manager & Editor",
+  "description": "An advanced files explorer and multi-format text/code editor with syntax styles, folder-level operations, search, and storage metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

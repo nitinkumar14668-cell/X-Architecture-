@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Drop Shadow layer -->
+    <path
+        android:fillColor="#0D000000"
+        android:pathData="M32,30h28l16,16v36c0,3.31-2.69,6-6,6H32c-3.31,0-6-2.69-6-6V36C26,32.69,28.69,30,32,30z" />
+
+    <!-- Pure Cyan Doc Sheet with Folded Corner -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M30,26h28l16,16v36c0,3.31-2.69,6-6,6H30c-3.31,0-6-2.69-6-6V32C24,28.69,26.69,26,30,26z M56,26v14h14L56,26z" />
+
+    <!-- Code Editor Horizontal Lines -->
+    <path
+        android:fillColor="#151722"
+        android:pathData="M32,48h22v4h-22z M32,56h32v4h-32z M32,64h16v4h-16z" />
+
+    <!-- Neon Pink Pencil Overlay -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M50,66l18,-18l4,4l-18,18l-4,-4z M66,44l4,4l-2,2l-4,-4l2,-2z M47,69l3.5,-0.5l-3,-3l-0.5,3.5z" />
+</vector>
