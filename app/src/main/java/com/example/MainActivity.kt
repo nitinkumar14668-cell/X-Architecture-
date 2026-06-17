@@ -7,6 +7,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.widget.Toast
+import java.io.File
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -49,6 +50,17 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Ensure webview directories exist to prevent chromium opendir warnings/errors
+        try {
+            val wasmDir = File(cacheDir, "WebView/Default/HTTP Cache/Code Cache/wasm")
+            if (!wasmDir.exists()) wasmDir.mkdirs()
+            val jsDir = File(cacheDir, "WebView/Default/HTTP Cache/Code Cache/js")
+            if (!jsDir.exists()) jsDir.mkdirs()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
         enableEdgeToEdge()
 
         // Check and request standard permissions for devices below Android 11 (API 30)

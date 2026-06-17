@@ -261,7 +261,7 @@ fun QuickPreviewModal(
                                         tint = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
                                     Spacer(modifier = Modifier.width(8.dp))
-                                    BasicTextField(
+                                    CustomBasicTextField(
                                         value = searchKeyword,
                                         onValueChange = { searchKeyword = it },
                                         textStyle = MaterialTheme.typography.bodyMedium.copy(
@@ -471,7 +471,7 @@ fun QuickPreviewModal(
 
 // Basic TextField container helper function to support searching input
 @Composable
-fun BasicTextField(
+fun CustomBasicTextField(
     value: String,
     onValueChange: (String) -> Unit,
     modifier: Modifier = Modifier,

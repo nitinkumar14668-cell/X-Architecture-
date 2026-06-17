@@ -114,7 +114,7 @@ class FileManagerViewModel(application: Application) : AndroidViewModel(applicat
     private val _editorWordWrap = MutableStateFlow(prefs.getBoolean("editor_word_wrap", true))
     val editorWordWrap: StateFlow<Boolean> = _editorWordWrap.asStateFlow()
 
-    private val _editorEngine = MutableStateFlow(prefs.getInt("editor_engine_mode", 0))
+    private val _editorEngine = MutableStateFlow(prefs.getInt("editor_engine_mode", 1))
     val editorEngine: StateFlow<Int> = _editorEngine.asStateFlow()
 
     private val _editorTheme = MutableStateFlow(prefs.getInt("editor_theme_mode", 0))

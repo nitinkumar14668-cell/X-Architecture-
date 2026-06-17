@@ -858,7 +858,8 @@ private fun getMonacoHtmlTemplate(themeName: String): String {
         <body>
             <div id="progress">
                 <div class="spinner"></div>
-                <div style="opacity: 0.7; font-size: 11px; margin-top:8px;">Launching Monaco Pro Studio...</div>
+                <div style="font-weight: bold; font-size: 14px; margin-top:8px;">Launching Monaco Pro Studio...</div>
+                <div style="opacity: 0.7; font-size: 11px; margin-top:12px; max-width: 80%; line-height: 1.4;">Requires active internet connection. If it does not load, switch the <b>Editor Engine style</b> to <b>Built-in Text Mode</b> in App Settings for full offline syntax highlighting.</div>
             </div>
             <div id="editor"></div>
             <script>
